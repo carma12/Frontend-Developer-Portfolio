@@ -1,0 +1,438 @@
+@import "variables";
+
+@media (min-width:320px) {
+
+  #contact {
+    padding: 12% 25px 17% 25px;
+
+    .contact-title {
+      font: {
+        size: 1.5em;
+        weight: map-get($fontWeight, bold);
+      }
+      text-align: center;
+      border-bottom: 3px solid map-get($colors, main);
+      padding-bottom: 5px;
+      margin: 1.5em 25% 2em 25%;
+      text-transform: uppercase;
+    }
+
+    .contact-sections {
+      .contact-cta-form {
+        background-color: map-get($colors, darkGray2);
+        width: auto;
+        text-align: center;
+
+        .cta-form-header {
+          color: map-get($colors, white);
+          padding-top: 64px;
+          padding-bottom: 45px;
+          font: {
+            size: 1em;
+            weight: map-get($fontWeight, bold);
+          }
+        }
+
+        #your-project-form {
+
+          #your-email, #your-name {
+            width: 80%;
+            background-color: transparent;
+            border: 0 none;
+            border-bottom: 2px solid map-get($colors, main);
+            padding: 8px 0;
+            margin: 14px 0;
+            outline: none;
+            color: map-get($colors, white);
+            caret-color: map-get($colors, white);
+
+            font: {
+              size: 1em;
+              weight: map-get($fontWeight, regular);
+            }
+
+            &::placeholder {
+              color: map-get($colors, lightGray);
+            }
+          }
+
+          #your-message {
+            width: 76%;
+            background-color: map-get($colors, white);
+            border: 3px solid map-get($colors, main);
+            border-radius: 24px;
+            text-align: left;
+            outline: none;
+            margin: 21px 0;
+            padding: 11px 14px;
+
+            font: {
+              size: 1em;
+              weight: map-get($fontWeight, regular);
+            }
+          }
+
+          button {
+            width: 49%;
+            color: map-get($colors, white);
+            background-color: map-get($colors, main);
+            border-color: transparent;
+            border-radius: 21px;
+            padding: 14px 0;
+            margin: 43px 0;
+            text-transform: uppercase;
+            font: {
+              weight: map-get($fontWeight, semibold);
+              size: 1.2rem;
+            }
+
+            &:hover {
+              background: map-get($colors, main) radial-gradient(circle, transparent 1%, map-get($colors, main) 1%) center/15000%;
+              transform: scale(1.1, 1.1);
+              transition: all 1s;
+            }
+
+            &:active {
+              background-color: map-get($colors, veryLightMain);
+              background-size: 100%;
+              transition: background 0s;
+            }
+          }
+        }
+      }
+
+      .contact-me-info {
+        text-align: center;
+        margin: 26% 0;
+
+        .contact-me-text {
+          font: {
+            size: 1em;
+            weight: map-get($fontWeight, medium);
+          }
+        }
+
+        .info__dev-card {
+          background-color: map-get($colors, veryLightMain);
+          text-align: center;
+          width: auto;
+          margin: 58px 32px;
+          padding: 24px;
+          border-radius: 35px;
+          border: 2px solid map-get($colors, lightGray);
+
+          img {
+            width: 36%;
+          }
+
+          p:first-child {
+            font-weight: map-get($fontWeight, semibold);
+          }
+        }
+
+        .info__specific {
+          width: auto;
+          margin: 60px 0;
+
+          .contact-email, .contact-location, .contact-telephone {
+            display: flex;
+            justify-content: center;
+            margin: 22px 0;
+
+            .vertical {
+              height: 57px;
+              border-left: 3px solid map-get($colors, main);
+              margin: 0 21px 0 21px;
+            }
+
+            img {
+              width: 28px;
+            }
+
+            .contact-data {
+              font-size: 1em;
+            }
+          }
+
+          .contact-email {
+            margin-left: 13px;
+          }
+
+          .contact-location {
+            margin-left: -17px;
+          }
+
+          .contact-telephone {
+            margin-left: -17px;
+          }
+        }
+
+        .info__social-networks {
+          border: 2px solid map-get($colors, lightGray);
+          width: auto;
+          margin: 10% 0 25% 0;
+
+          .follow-me {
+            text-transform: uppercase;
+            margin: 36px 0;
+            font-weight: map-get($fontWeight, medium);
+          }
+
+          .social-networks {
+            width: auto;
+            display: flex;
+            justify-content: center;
+            padding: 14px 10px;
+
+            a {
+              width: 100%;
+
+              img {
+                width: 31px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// -------- PORTRAIT TABLETS -----------
+@media (min-width: 600px) and (max-width: 800px) {
+
+  #contact {
+    padding: 9% 30px;
+    width: auto;
+
+    .contact-title {
+      font: {
+        size: 1.5em;
+      }
+      margin: 1em 39%;
+    }
+
+    .contact-sections {
+      width: 100%;
+
+      .contact-cta-form {
+        margin: 9% 90px;
+
+        .cta-form-header {
+          font: {
+            size: 1.2em;
+          }
+        }
+
+        #your-project-form {
+          #your-email, #your-name {
+            margin: 27px 0;
+          }
+
+          #your-message {
+            resize: none;
+            width: 76%;
+            margin: 42px 0;
+            padding: 11px 14px;
+
+            font: {
+              size: 1em;
+            }
+          }
+
+          button {
+            width: 34%;
+            margin: 8px 0 50px 0;
+            font: {
+              size: 1em;
+            }
+          }
+        }
+      }
+
+      .contact-me-info {
+        margin: 19% 0;
+
+        .info__dev-card {
+          margin: 58px 32%;
+          padding: 11px;
+
+          img {
+            width: 58px;
+          }
+        }
+
+        .info__specific {
+          margin: 65px 0;
+          .contact-telephone {
+            .vertical {
+              margin: 0 22px 0 21px;
+            }
+          }
+        }
+
+        .info__social-networks {
+          margin: 0 32%;
+        }
+      }
+    }
+  }
+}
+
+// --------- TABLETS, LO-RES LAPTOPS/IPAD -----------
+@media (min-width: 801px) and (max-width: 1024px) {
+
+  #contact {
+    padding: 5% 25px 14% 25px;
+
+    .contact-title {
+      font: {
+        size: 2em;
+      }
+      margin: 1.5em 42% 5em 42%;
+    }
+
+    .contact-sections {
+      display: flex;
+      justify-content: center;
+
+      .contact-cta-form {
+        width: 400px;
+
+        .cta-form-header {
+          padding: 36px 9px 67px 9px;
+          font: {
+            size: 1.2em;
+          }
+        }
+
+        #your-project-form {
+          #your-email, #your-name {
+            margin: 27px 0;
+          }
+
+          #your-message {
+            resize: none;
+            width: 76%;
+            margin: 42px 0;
+            padding: 11px 14px;
+
+            font: {
+              size: 1em;
+            }
+          }
+        }
+      }
+
+      .contact-me-info {
+        margin: 0;
+
+        .contact-me-text {
+          margin-bottom: 4em;
+          font: {
+            size: 1em;
+            weight: map-get($fontWeight, medium);
+          }
+        }
+
+        .info__dev-card {
+          margin: 0 147px;
+          padding: 11px 26px;
+        }
+
+        .info__social-networks {
+          margin: 0 17%;
+
+          .follow-me {
+            margin: 30px 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+// ---- LAPTOPS / DESKTOPS ---
+@media (min-width: 1025px) {
+  #contact {
+    padding: 5% 25px 14% 25px;
+
+    .contact-title {
+      font: {
+        size: 2em;
+      }
+      margin: 1.5em 45.5% 5em 45.5%
+    }
+
+    .contact-sections {
+      display: flex;
+      justify-content: center;
+
+      .contact-cta-form {
+        width: 400px;
+
+        .cta-form-header {
+          padding: 36px 9px 67px 9px;
+          font: {
+            size: 1.2em;
+          }
+        }
+
+        #your-project-form {
+          #your-email, #your-name {
+            margin: 27px 0;
+          }
+
+          #your-message {
+            resize: none;
+            width: 76%;
+            margin: 42px 0;
+            padding: 11px 14px;
+
+            font: {
+              size: 1em;
+            }
+          }
+        }
+      }
+
+      .contact-me-info {
+        margin: 0;
+
+        .contact-me-text {
+          margin-bottom: 4em;
+          font: {
+            size: 1em;
+            weight: map-get($fontWeight, medium);
+          }
+        }
+
+        .info__dev-card {
+          margin: 0 147px;
+          padding: 11px 26px;
+        }
+
+        .info__social-networks {
+          margin: 0 17%;
+
+          .follow-me {
+            margin: 30px 0;
+          }
+
+          .social-networks {
+            height: 37px;
+
+            a {
+              &:hover, &:active {
+                img {
+                  width: 40px;
+                  transition: all 0.5s;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

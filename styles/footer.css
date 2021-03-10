@@ -1,0 +1,18 @@
+@media (min-width: 320px) {
+  #footer {
+    background-color: #4F4F4F;
+    width: auto; }
+    #footer .footer-div {
+      padding: 16px 0;
+      text-align: center;
+      color: #d9d9d9;
+      font-size: 0.9em;
+      font-weight: 500; }
+      #footer .footer-div .love-icon {
+        width: 23px;
+        vertical-align: middle; }
+      #footer .footer-div .github-icon {
+        width: 23px;
+        vertical-align: middle; } }
+
+/*# sourceMappingURL=footer.css.map */

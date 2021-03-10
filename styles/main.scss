@@ -1,0 +1,481 @@
+@import "variables";
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+@media (min-width:320px) {
+
+  header {
+    background: black;
+    overflow: hidden;
+    height: 582px;
+  }
+
+  .header {
+    .welcome-image {
+      width: 268%;
+      opacity: 0.67;
+      background: {
+        color: rgba(#1F1E1E, 0.38);
+        repeat: no-repeat;
+        position: left top;
+        size: 100%;
+      }
+    }
+
+    .header-content {
+      display: inline-block;
+
+      .logo {
+        background-color: transparent;
+        width: 15%;
+        max-width: 68px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 15px;
+      }
+
+      .burger-button {
+        position: absolute;
+        right: 0;
+        top: 0;
+        background: none;
+        padding: 7px;
+        border-style: none;
+        border: {
+          color: transparent;
+        }
+
+        &:active :focus{
+          outline: 0;
+          border: none;
+        }
+
+        img { // burger menu image
+          padding: 11px;
+          background-color: transparent;
+          width: 32px;
+        }
+      }
+    }
+  }
+
+  .open {
+    visibility: visible !important;
+    transform: translate(-103%, 0);
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  }
+
+  .welcome-text {
+    position: absolute;
+    top: 160px;
+    width: 100%;
+
+    .hello-text-1 {
+      color: map-get($colors, white);
+      text-align: center;
+      margin-bottom: 32px;
+      font: {
+        weight: map-get($fontWeight, medium);
+      }
+    }
+
+    .hello-text-2 {
+      color: map-get($colors, white);
+      text-align: center;
+      font: {
+        weight: map-get($fontWeight, bold);
+      }
+    }
+  }
+
+  .web-main-menu{
+    visibility: hidden;
+  }
+
+  .mobile-main-menu {
+    visibility: hidden; // mobile-first
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: -75%; // initial position before effect
+    padding: 10px;
+    background-color: map-get($colors, white);
+    width: 66vw;
+
+    .cross-icon {
+      text-align: right;
+      padding: 10px;
+
+      img {
+        width: 25px;
+      }
+    }
+
+    ul {
+      list-style: none;
+      padding: 0 34px;
+
+      li {
+        padding: 0 0 2em 0;
+
+        a {
+          display: inline-block;
+          width: 100%;
+          text-decoration: none;
+          font: {
+            size: 1em;
+            weight: map-get($fontWeight, medium);
+          }
+          color: black;
+
+          &:hover {
+            color: map-get($colors, main);
+            background: map-get($colors, white) radial-gradient(circle, transparent 0.1%, map-get($colors, white) 0.1%) center/100000%;
+            transform: scale(1.1, 1.1);
+            transition: all 1s;
+          }
+
+          &:active {
+            background-color: map-get($colors, main);
+            background-size: 100%;
+            transition: background 0s;
+          }
+        }
+      }
+    }
+  }
+
+  .hire-button {
+    position: absolute;
+    top: 438px;
+    width: 100%;
+    text-align: center;
+
+    button {
+      color: map-get($colors, main);
+      background-color: transparent;
+      border: 4px solid map-get($colors, main);
+      border-radius: 25px;
+      padding: 17px;
+      width: 36%;
+      max-width: 195px;
+      font: {
+        weight: map-get($fontWeight, bold);
+        size: 1em;
+      }
+
+      &:hover {
+        color: map-get($colors, absolutWhite);
+        background: map-get($colors, main) radial-gradient(circle, transparent 0.1%, map-get($colors, main) 0.1%) center/100000%;
+        transform: scale(1.1, 1.1);
+        transition: all 1s;
+      }
+
+      &:active {
+        background-color: map-get($colors, veryLightMain);
+        background-size: 100%;
+        transition: background 0s;
+      }
+    }
+  }
+
+  .arrow-icon {
+    visibility: hidden;
+  }
+}
+
+// -------- PORTRAIT TABLETS -----------
+@media (min-width: 600px) and (max-width: 800px) {
+
+  .header {
+    .header-content {
+      .burger-button {
+        visibility: hidden;
+      }
+
+      .web-main-menu{
+        visibility: visible;
+        position: absolute;
+        right: 86px;
+        padding: 0;
+        top: 16px;
+        font: {
+          size: 0.8em;
+          weight: map-get($fontWeight, semibold);
+        }
+
+        .web-nav__items {
+          display: flex;
+          justify-content: center;
+
+          .web-nav__item {
+            padding: 0 5%;
+            list-style-type: none;
+
+            a {
+              text-decoration: none;
+              color: map-get($colors, white);
+            }
+          }
+
+          .first a {
+            color: map-get($colors, main);
+          }
+        }
+      }
+    }
+  }
+
+  .mobile-main-menu {
+    visibility: hidden;
+  }
+
+  .hire-button {
+    top: 44%;
+
+    button {
+      border-radius: 21px;
+      padding: 15px 12px;
+      width: 18%;
+      font: {
+        size: 1rem;
+      }
+      background-color: transparent;
+      transition: background 0.8s;
+    }
+  }
+
+  .arrow-icon {
+    visibility: visible;
+    position: absolute;
+    top: 52%;
+    left: 47.5%;
+    img {
+      background-color: transparent;
+    }
+  }
+}
+
+// --------- TABLETS, LO-RES LAPTOPS/IPAD -----------
+@media (min-width: 801px) and (max-width: 1024px) {
+  header {
+    height: 100vh;
+  }
+
+  .header {
+    .welcome-image {
+      width: auto;
+      height: 128vh;
+    }
+
+    .header-content {
+
+      .logo {
+        width: 7%;
+      }
+
+      .burger-button {
+        visibility: hidden;
+      }
+
+      .web-main-menu{
+        visibility: visible;
+        position: absolute;
+        right: 118px;
+        padding: 0;
+        top: 16px;
+        font: {
+          size: 1em;
+          weight: map-get($fontWeight, semibold);
+        }
+
+        .web-nav__items {
+          display: flex;
+          justify-content: center;
+
+          .web-nav__item {
+            padding: 0 5%;
+            list-style-type: none;
+
+            &:hover {
+              transform: scale(1.1, 1.1);
+              transition: all 1s;
+
+              a {
+                color: map-get($colors, veryLightMain);
+              }
+            }
+
+            a {
+              text-decoration: none;
+              color: map-get($colors, white);
+            }
+          }
+
+          .first a {
+            color: map-get($colors, main);
+          }
+        }
+      }
+    }
+  }
+
+  .welcome-text {
+    top: 32%;
+
+    .hello-text-1 {
+      font: {
+        size: 2em;
+        weight: map-get($fontWeight, medium);
+      }
+    }
+
+    .hello-text-2 {
+      font: {
+        size: 3em;
+        weight: map-get($fontWeight, bold);
+      }
+    }
+  }
+
+  .hire-button {
+    top: 86%;
+
+    button {
+      border-radius: 21px;
+      padding: 19px;
+      width: 15%;
+      font: {
+        size: 1rem;
+      }
+      background-color: transparent;
+      transition: background 0.8s;
+    }
+  }
+
+  .arrow-icon {
+    visibility: visible;
+    position: absolute;
+    top: 93%;
+    left: 48%;
+    img {
+      background-color: transparent;
+    }
+  }
+}
+
+// ---- LAPTOPS / DESKTOPS ---
+@media (min-width: 1025px) {
+
+  header {
+    height: 100vh;
+  }
+
+  .header {
+    .welcome-image {
+      width: auto;
+      height: 128vh;
+    }
+
+    .header-content {
+
+      .logo {
+        width: 7%;
+      }
+
+      .burger-button {
+        visibility: hidden;
+      }
+
+      .web-main-menu{
+        visibility: visible;
+        position: absolute;
+        right: 118px;
+        padding: 0;
+        top: 16px;
+        font: {
+          size: 1em;
+          weight: map-get($fontWeight, semibold);
+        }
+
+        .web-nav__items {
+          display: flex;
+          justify-content: center;
+
+          .web-nav__item {
+            padding: 0 5%;
+            list-style-type: none;
+
+            &:hover {
+              transform: scale(1.1, 1.1);
+              transition: all 1s;
+
+              a {
+                color: map-get($colors, veryLightMain);
+              }
+            }
+
+            a {
+              text-decoration: none;
+              color: map-get($colors, white);
+            }
+          }
+
+          .first a {
+            color: map-get($colors, main);
+          }
+        }
+      }
+    }
+  }
+
+  .welcome-text {
+    top: 32%;
+
+    .hello-text-1 {
+      font: {
+        size: 2em;
+        weight: map-get($fontWeight, medium);
+      }
+    }
+
+    .hello-text-2 {
+      font: {
+        size: 3em;
+        weight: map-get($fontWeight, bold);
+      }
+    }
+  }
+
+  .hire-button {
+    top: 79%;
+
+    button {
+      border-radius: 21px;
+      padding: 19px;
+      width: 15%;
+      font: {
+        size: 1rem;
+      }
+      background-color: transparent;
+      transition: background 0.8s;
+    }
+  }
+
+  .arrow-icon {
+    visibility: visible;
+    position: absolute;
+    top: 90%;
+    left: 49%;
+    img {
+      background-color: transparent;
+    }
+  }
+}

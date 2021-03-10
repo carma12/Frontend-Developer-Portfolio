@@ -1,0 +1,208 @@
+@media (min-width: 320px) {
+  #about-me {
+    background-color: #fce9d9;
+    padding: 7% 0 8% 0; }
+    #about-me .about-me-text {
+      padding: 20px;
+      text-align: center; }
+      #about-me .about-me-text h1 {
+        font-size: 1.5em;
+        font-weight: 700;
+        border-bottom: 3px solid #F2994A;
+        padding-bottom: 5px;
+        margin: 1.5em 26%;
+        text-transform: uppercase; }
+      #about-me .about-me-text h2 {
+        padding: 1em 0;
+        font-size: 1.3em;
+        font-weight: 600; }
+      #about-me .about-me-text em {
+        color: #F2994A;
+        font-weight: 600;
+        font-style: normal; }
+      #about-me .about-me-text p {
+        padding: 28px 6px;
+        margin-bottom: 9%;
+        font-size: 1em;
+        text-align: justify; }
+    #about-me .education, #about-me .skills {
+      display: block;
+      background-color: white;
+      width: auto;
+      padding: 8px;
+      margin: 50px 7%;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 1.6em;
+      font-weight: 700; }
+    #about-me .education {
+      margin-bottom: 8%; }
+      #about-me .education .education-title {
+        font-size: 1em; }
+      #about-me .education .education-details, #about-me .education .education-details-2 {
+        border: 2px solid #BDBDBD;
+        margin: 8% 7%; }
+        #about-me .education .education-details .education-details__container, #about-me .education .education-details-2 .education-details__container {
+          padding: 30px; }
+          #about-me .education .education-details .education-details__container .education-details__title, #about-me .education .education-details .education-details__container .education-details-2__title, #about-me .education .education-details-2 .education-details__container .education-details__title, #about-me .education .education-details-2 .education-details__container .education-details-2__title {
+            padding-bottom: 16px;
+            font-weight: 600;
+            font-size: 0.7em; }
+          #about-me .education .education-details .education-details__container .education-details__school, #about-me .education .education-details .education-details__container .education-details__class, #about-me .education .education-details .education-details__container .education-details-2__school, #about-me .education .education-details .education-details__container .education-details-2__class, #about-me .education .education-details-2 .education-details__container .education-details__school, #about-me .education .education-details-2 .education-details__container .education-details__class, #about-me .education .education-details-2 .education-details__container .education-details-2__school, #about-me .education .education-details-2 .education-details__container .education-details-2__class {
+            padding: 14px;
+            font-weight: 400;
+            font-size: 0.5em;
+            color: #6F6F6F; }
+    #about-me .skills .skills-title {
+      font-size: 1em; }
+    #about-me .skills .skills-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      gap: 23px 0;
+      padding: 25px 0;
+      align-items: center; }
+      #about-me .skills .skills-list .html-skill img, #about-me .skills .skills-list .css-skill img, #about-me .skills .skills-list .bootstrap-skill img, #about-me .skills .skills-list .sass-skill img, #about-me .skills .skills-list .javascript-skill img, #about-me .skills .skills-list .react-skill img, #about-me .skills .skills-list .figma-skill img {
+        width: 24px; }
+      #about-me .skills .skills-list .html-skill p, #about-me .skills .skills-list .css-skill p, #about-me .skills .skills-list .bootstrap-skill p, #about-me .skills .skills-list .sass-skill p, #about-me .skills .skills-list .javascript-skill p, #about-me .skills .skills-list .react-skill p, #about-me .skills .skills-list .figma-skill p {
+        font-size: 0.5em;
+        font-weight: 500; } }
+@media (min-width: 600px) and (max-width: 800px) {
+  #about-me {
+    padding: 9% 9% 8% 9%; }
+    #about-me .about-me-text {
+      padding: 0; }
+      #about-me .about-me-text h1 {
+        font-size: 1.5em;
+        margin: 1em 36%; }
+      #about-me .about-me-text h2 {
+        padding: 1.2em 0; }
+      #about-me .about-me-text p {
+        padding: 28px 15%; }
+    #about-me .education-skills-section {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 4em; }
+    #about-me .education, #about-me .skills {
+      box-sizing: border-box;
+      margin: 0 7%;
+      width: 100%;
+      max-width: 389px;
+      font-size: 1.5em; }
+    #about-me .education {
+      margin: 0; }
+      #about-me .education .education-title {
+        padding: 2% 0 14% 0; }
+      #about-me .education .education-details, #about-me .education .education-details-2 {
+        border: 2px solid #BDBDBD;
+        margin: 6% 6%; }
+        #about-me .education .education-details .education-details__container, #about-me .education .education-details-2 .education-details__container {
+          padding: 13px; }
+          #about-me .education .education-details .education-details__container .education-details__title, #about-me .education .education-details .education-details__container .education-details-2__title, #about-me .education .education-details-2 .education-details__container .education-details__title, #about-me .education .education-details-2 .education-details__container .education-details-2__title {
+            font-size: 0.7em; }
+          #about-me .education .education-details .education-details__container .education-details__school, #about-me .education .education-details .education-details__container .education-details__class, #about-me .education .education-details .education-details__container .education-details-2__school, #about-me .education .education-details .education-details__container .education-details-2__class, #about-me .education .education-details-2 .education-details__container .education-details__school, #about-me .education .education-details-2 .education-details__container .education-details__class, #about-me .education .education-details-2 .education-details__container .education-details-2__school, #about-me .education .education-details-2 .education-details__container .education-details-2__class {
+            padding: 8px;
+            font-size: 0.6em; }
+    #about-me .skills {
+      margin: 0 0 0 22px; }
+      #about-me .skills .skills-title {
+        padding: 2% 0; }
+      #about-me .skills .skills-list {
+        padding: 50px 25px; }
+        #about-me .skills .skills-list .html-skill img, #about-me .skills .skills-list .css-skill img, #about-me .skills .skills-list .bootstrap-skill img, #about-me .skills .skills-list .sass-skill img, #about-me .skills .skills-list .javascript-skill img, #about-me .skills .skills-list .react-skill img, #about-me .skills .skills-list .figma-skill img {
+          width: 30px; } }
+@media (min-width: 801px) and (max-width: 1024px) {
+  #about-me {
+    padding: 5% 9% 8% 9%; }
+    #about-me .about-me-text {
+      padding: 0; }
+      #about-me .about-me-text h1 {
+        font-size: 2em;
+        margin: 1em 39% 2em 39%;
+        text-transform: uppercase; }
+      #about-me .about-me-text h2 {
+        margin-top: 3em;
+        font-size: 1.2em;
+        font-weight: 600; }
+      #about-me .about-me-text p {
+        margin-bottom: 7%;
+        padding: 28px 20%;
+        font-size: 0.8em; }
+    #about-me .education-skills-section {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 4em; }
+    #about-me .education, #about-me .skills {
+      box-sizing: border-box;
+      margin: 0 7%;
+      width: 100%;
+      max-width: 389px;
+      font-size: 1.5em; }
+    #about-me .education {
+      margin-right: 0; }
+      #about-me .education .education-title {
+        padding: 2% 0 14% 0; }
+      #about-me .education .education-details, #about-me .education .education-details-2 {
+        border: 2px solid #BDBDBD;
+        margin: 6% 6%; }
+        #about-me .education .education-details .education-details__container, #about-me .education .education-details-2 .education-details__container {
+          padding: 13px; }
+          #about-me .education .education-details .education-details__container .education-details__title, #about-me .education .education-details .education-details__container .education-details-2__title, #about-me .education .education-details-2 .education-details__container .education-details__title, #about-me .education .education-details-2 .education-details__container .education-details-2__title {
+            font-size: 0.7em; }
+          #about-me .education .education-details .education-details__container .education-details__school, #about-me .education .education-details .education-details__container .education-details__class, #about-me .education .education-details .education-details__container .education-details-2__school, #about-me .education .education-details .education-details__container .education-details-2__class, #about-me .education .education-details-2 .education-details__container .education-details__school, #about-me .education .education-details-2 .education-details__container .education-details__class, #about-me .education .education-details-2 .education-details__container .education-details-2__school, #about-me .education .education-details-2 .education-details__container .education-details-2__class {
+            padding: 8px;
+            font-size: 0.6em; }
+    #about-me .skills .skills-title {
+      padding: 2% 0; }
+    #about-me .skills .skills-list {
+      padding: 50px 25px; }
+      #about-me .skills .skills-list .html-skill img, #about-me .skills .skills-list .css-skill img, #about-me .skills .skills-list .bootstrap-skill img, #about-me .skills .skills-list .sass-skill img, #about-me .skills .skills-list .javascript-skill img, #about-me .skills .skills-list .react-skill img, #about-me .skills .skills-list .figma-skill img {
+        width: 30px; } }
+@media (min-width: 1025px) {
+  #about-me {
+    padding: 5% 9% 8% 9%; }
+    #about-me .about-me-text {
+      padding: 0; }
+      #about-me .about-me-text h1 {
+        font-size: 2em;
+        margin: 1em 44% 2em 44%;
+        text-transform: uppercase; }
+      #about-me .about-me-text h2 {
+        margin-top: 3em;
+        font-size: 1.8em;
+        font-weight: 600; }
+      #about-me .about-me-text p {
+        margin-bottom: 7%;
+        padding: 28px 20%;
+        font-size: 1em; }
+    #about-me .education-skills-section {
+      display: flex;
+      justify-content: center; }
+    #about-me .education, #about-me .skills {
+      box-sizing: border-box;
+      margin: 0 7%;
+      width: 100%;
+      max-width: 389px;
+      font-size: 1.5em; }
+    #about-me .education {
+      margin-right: 0; }
+      #about-me .education .education-title {
+        padding: 2% 0 14% 0; }
+      #about-me .education .education-details, #about-me .education .education-details-2 {
+        border: 2px solid #BDBDBD;
+        margin: 6% 6%; }
+        #about-me .education .education-details .education-details__container, #about-me .education .education-details-2 .education-details__container {
+          padding: 13px; }
+          #about-me .education .education-details .education-details__container .education-details__title, #about-me .education .education-details .education-details__container .education-details-2__title, #about-me .education .education-details-2 .education-details__container .education-details__title, #about-me .education .education-details-2 .education-details__container .education-details-2__title {
+            font-size: 0.7em; }
+          #about-me .education .education-details .education-details__container .education-details__school, #about-me .education .education-details .education-details__container .education-details__class, #about-me .education .education-details .education-details__container .education-details-2__school, #about-me .education .education-details .education-details__container .education-details-2__class, #about-me .education .education-details-2 .education-details__container .education-details__school, #about-me .education .education-details-2 .education-details__container .education-details__class, #about-me .education .education-details-2 .education-details__container .education-details-2__school, #about-me .education .education-details-2 .education-details__container .education-details-2__class {
+            padding: 8px;
+            font-size: 0.6em; }
+    #about-me .skills .skills-title {
+      padding: 2% 0; }
+    #about-me .skills .skills-list {
+      padding: 50px 25px; }
+      #about-me .skills .skills-list .html-skill img, #about-me .skills .skills-list .css-skill img, #about-me .skills .skills-list .bootstrap-skill img, #about-me .skills .skills-list .sass-skill img, #about-me .skills .skills-list .javascript-skill img, #about-me .skills .skills-list .react-skill img, #about-me .skills .skills-list .figma-skill img {
+        width: 30px; } }
+
+/*# sourceMappingURL=about.css.map */

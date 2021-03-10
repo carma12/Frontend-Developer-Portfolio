@@ -1,0 +1,269 @@
+@media (min-width: 320px) {
+  #my-work {
+    padding: 14% 0 17% 0; }
+    #my-work .my-work-title {
+      font-size: 1.5em;
+      font-weight: 700;
+      text-align: center;
+      border-bottom: 3px solid #F2994A;
+      padding-bottom: 5px;
+      margin: 1.5em 30% 2.7em 30%;
+      text-transform: uppercase; }
+    #my-work .my-work-container {
+      margin: 15%; }
+      #my-work .my-work-container .project-1, #my-work .my-work-container .project-2, #my-work .my-work-container .project-3, #my-work .my-work-container .project-4, #my-work .my-work-container .project-5, #my-work .my-work-container .project-6 {
+        position: relative;
+        margin-bottom: 40px; }
+        #my-work .my-work-container .project-1:hover .overlay, #my-work .my-work-container .project-2:hover .overlay, #my-work .my-work-container .project-3:hover .overlay, #my-work .my-work-container .project-4:hover .overlay, #my-work .my-work-container .project-5:hover .overlay, #my-work .my-work-container .project-6:hover .overlay {
+          background: #fce9d9 radial-gradient(circle, transparent 1%, #fce9d9 1%) center/15000%;
+          transition: all 1s; }
+        #my-work .my-work-container .project-1:active .overlay, #my-work .my-work-container .project-2:active .overlay, #my-work .my-work-container .project-3:active .overlay, #my-work .my-work-container .project-4:active .overlay, #my-work .my-work-container .project-5:active .overlay, #my-work .my-work-container .project-6:active .overlay {
+          background-color: #F2994A;
+          background-size: 100%;
+          transition: background 0s; }
+        #my-work .my-work-container .project-1 .overlay, #my-work .my-work-container .project-2 .overlay, #my-work .my-work-container .project-3 .overlay, #my-work .my-work-container .project-4 .overlay, #my-work .my-work-container .project-5 .overlay, #my-work .my-work-container .project-6 .overlay {
+          visibility: visible;
+          position: absolute;
+          left: 0;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          margin: 0;
+          padding: 0;
+          width: 100%;
+          height: 98.6%;
+          opacity: 0.7;
+          border-radius: 55px;
+          background-color: #fce9d9; }
+        #my-work .my-work-container .project-1 .overlay-text, #my-work .my-work-container .project-2 .overlay-text, #my-work .my-work-container .project-3 .overlay-text, #my-work .my-work-container .project-4 .overlay-text, #my-work .my-work-container .project-5 .overlay-text, #my-work .my-work-container .project-6 .overlay-text {
+          visibility: visible;
+          position: absolute;
+          text-align: center;
+          top: 38%;
+          left: 0;
+          padding: 0;
+          margin: 0;
+          width: 100%;
+          height: 100%;
+          opacity: 1; }
+          #my-work .my-work-container .project-1 .overlay-text .overlay-text-1, #my-work .my-work-container .project-2 .overlay-text .overlay-text-1, #my-work .my-work-container .project-3 .overlay-text .overlay-text-1, #my-work .my-work-container .project-4 .overlay-text .overlay-text-1, #my-work .my-work-container .project-5 .overlay-text .overlay-text-1, #my-work .my-work-container .project-6 .overlay-text .overlay-text-1 {
+            margin: 0 0 1em 0;
+            font-weight: 600;
+            font-size: 1.3em;
+            color: #423e3e; }
+          #my-work .my-work-container .project-1 .overlay-text .overlay-text-2, #my-work .my-work-container .project-2 .overlay-text .overlay-text-2, #my-work .my-work-container .project-3 .overlay-text .overlay-text-2, #my-work .my-work-container .project-4 .overlay-text .overlay-text-2, #my-work .my-work-container .project-5 .overlay-text .overlay-text-2, #my-work .my-work-container .project-6 .overlay-text .overlay-text-2 {
+            margin: 0;
+            font-weight: 500;
+            font-size: 1em;
+            color: #423e3e; }
+        #my-work .my-work-container .project-1 .project-img, #my-work .my-work-container .project-2 .project-img, #my-work .my-work-container .project-3 .project-img, #my-work .my-work-container .project-4 .project-img, #my-work .my-work-container .project-5 .project-img, #my-work .my-work-container .project-6 .project-img {
+          width: 100%;
+          border-radius: 55px;
+          opacity: 1; }
+    #my-work .button-container {
+      text-align: center; }
+      #my-work .button-container button {
+        width: 50%;
+        color: #F2994A;
+        background-color: transparent;
+        border: 4px solid #F2994A;
+        border-radius: 69px;
+        padding: 8px 3px;
+        font-weight: 700;
+        font-size: 1em;
+        transition: background 0.8s; }
+        #my-work .button-container button:hover {
+          background: #F2994A radial-gradient(circle, transparent 0.1%, #F2994A 0.1%) center/100000%; }
+          #my-work .button-container button:hover .button-github img {
+            filter: invert(100%) sepia(1%) saturate(7500%) hue-rotate(76deg) brightness(142%) contrast(96%);
+            -webkit-filter: invert(100%) sepia(1%) saturate(7500%) hue-rotate(76deg) brightness(142%) contrast(96%); }
+          #my-work .button-container button:hover .button-github p {
+            color: #FFFFFF; }
+        #my-work .button-container button:active {
+          background-color: #fef4ec;
+          background-size: 100%;
+          transition: background 0s; }
+        #my-work .button-container button a {
+          text-decoration: none; }
+          #my-work .button-container button a .button-github {
+            display: flex; }
+            #my-work .button-container button a .button-github img {
+              width: 16%;
+              padding: 0 6px; }
+            #my-work .button-container button a .button-github p {
+              margin: 8px 0;
+              color: #F2994A;
+              font-size: 0.8em;
+              justify-content: center; } }
+@media (min-width: 600px) and (max-width: 800px) {
+  #my-work {
+    padding: 9% 6%; }
+    #my-work .my-work-title {
+      font-size: 1.5em;
+      margin: 1em 37% 2.5em 37%; }
+    #my-work .my-work-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      gap: 35px 35px;
+      align-items: center;
+      margin: 4%; }
+      #my-work .my-work-container .project-1, #my-work .my-work-container .project-2, #my-work .my-work-container .project-3, #my-work .my-work-container .project-4, #my-work .my-work-container .project-5, #my-work .my-work-container .project-6 {
+        padding: 0;
+        margin: 0;
+        position: relative; }
+        #my-work .my-work-container .project-1:hover .project-img, #my-work .my-work-container .project-2:hover .project-img, #my-work .my-work-container .project-3:hover .project-img, #my-work .my-work-container .project-4:hover .project-img, #my-work .my-work-container .project-5:hover .project-img, #my-work .my-work-container .project-6:hover .project-img {
+          filter: none;
+          -webkit-filter: none; }
+        #my-work .my-work-container .project-1:hover .overlay, #my-work .my-work-container .project-2:hover .overlay, #my-work .my-work-container .project-3:hover .overlay, #my-work .my-work-container .project-4:hover .overlay, #my-work .my-work-container .project-5:hover .overlay, #my-work .my-work-container .project-6:hover .overlay {
+          background: #fce9d9 radial-gradient(circle, transparent 1%, #fce9d9 1%) center/15000%;
+          transition: all 1s; }
+        #my-work .my-work-container .project-1:active .overlay, #my-work .my-work-container .project-2:active .overlay, #my-work .my-work-container .project-3:active .overlay, #my-work .my-work-container .project-4:active .overlay, #my-work .my-work-container .project-5:active .overlay, #my-work .my-work-container .project-6:active .overlay {
+          background-color: #F2994A;
+          background-size: 100%;
+          transition: background 0s; }
+        #my-work .my-work-container .project-1 .overlay, #my-work .my-work-container .project-2 .overlay, #my-work .my-work-container .project-3 .overlay, #my-work .my-work-container .project-4 .overlay, #my-work .my-work-container .project-5 .overlay, #my-work .my-work-container .project-6 .overlay {
+          visibility: visible;
+          position: absolute;
+          width: 100%;
+          height: 99%;
+          left: 0;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          margin: 0;
+          padding: 0; }
+        #my-work .my-work-container .project-1 .overlay-text, #my-work .my-work-container .project-2 .overlay-text, #my-work .my-work-container .project-3 .overlay-text, #my-work .my-work-container .project-4 .overlay-text, #my-work .my-work-container .project-5 .overlay-text, #my-work .my-work-container .project-6 .overlay-text {
+          visibility: visible;
+          position: absolute;
+          padding: 0;
+          width: 100%;
+          top: 29%; }
+          #my-work .my-work-container .project-1 .overlay-text .overlay-text-1, #my-work .my-work-container .project-2 .overlay-text .overlay-text-1, #my-work .my-work-container .project-3 .overlay-text .overlay-text-1, #my-work .my-work-container .project-4 .overlay-text .overlay-text-1, #my-work .my-work-container .project-5 .overlay-text .overlay-text-1, #my-work .my-work-container .project-6 .overlay-text .overlay-text-1 {
+            font-size: 1.3em; }
+          #my-work .my-work-container .project-1 .overlay-text .overlay-text-2, #my-work .my-work-container .project-2 .overlay-text .overlay-text-2, #my-work .my-work-container .project-3 .overlay-text .overlay-text-2, #my-work .my-work-container .project-4 .overlay-text .overlay-text-2, #my-work .my-work-container .project-5 .overlay-text .overlay-text-2, #my-work .my-work-container .project-6 .overlay-text .overlay-text-2 {
+            font-size: 1.2em; }
+        #my-work .my-work-container .project-1 .project-img, #my-work .my-work-container .project-2 .project-img, #my-work .my-work-container .project-3 .project-img, #my-work .my-work-container .project-4 .project-img, #my-work .my-work-container .project-5 .project-img, #my-work .my-work-container .project-6 .project-img {
+          width: 100%;
+          height: 100%; }
+    #my-work .button-container {
+      text-align: center;
+      margin: 13% 0 6% 0; }
+      #my-work .button-container button {
+        width: 214px;
+        color: #F2994A;
+        background-color: transparent;
+        border: 4px solid #F2994A;
+        border-radius: 29px;
+        padding: 13px 15px;
+        font-weight: 700;
+        font-size: 1.2rem; }
+        #my-work .button-container button a .button-github img {
+          width: 17%;
+          padding: 0 8px; } }
+@media (min-width: 801px) and (max-width: 1024px) {
+  #my-work {
+    padding: 7% 0; }
+    #my-work .my-work-title {
+      font-size: 2em;
+      margin: 1em 41% 3em 41%; }
+    #my-work .my-work-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      gap: 35px 35px;
+      align-items: center;
+      margin: 10%; }
+      #my-work .my-work-container .project-1, #my-work .my-work-container .project-2, #my-work .my-work-container .project-3, #my-work .my-work-container .project-4, #my-work .my-work-container .project-5, #my-work .my-work-container .project-6 {
+        padding: 0;
+        margin: 0;
+        position: relative;
+        max-width: 500px; }
+        #my-work .my-work-container .project-1:hover .overlay, #my-work .my-work-container .project-2:hover .overlay, #my-work .my-work-container .project-3:hover .overlay, #my-work .my-work-container .project-4:hover .overlay, #my-work .my-work-container .project-5:hover .overlay, #my-work .my-work-container .project-6:hover .overlay {
+          background: #fce9d9 radial-gradient(circle, transparent 1%, #fce9d9 1%) center/15000%;
+          transition: all 1s; }
+        #my-work .my-work-container .project-1:active .overlay, #my-work .my-work-container .project-2:active .overlay, #my-work .my-work-container .project-3:active .overlay, #my-work .my-work-container .project-4:active .overlay, #my-work .my-work-container .project-5:active .overlay, #my-work .my-work-container .project-6:active .overlay {
+          background-color: #F2994A;
+          background-size: 100%;
+          transition: background 0s; }
+        #my-work .my-work-container .project-1 .overlay, #my-work .my-work-container .project-2 .overlay, #my-work .my-work-container .project-3 .overlay, #my-work .my-work-container .project-4 .overlay, #my-work .my-work-container .project-5 .overlay, #my-work .my-work-container .project-6 .overlay {
+          visibility: visible; }
+        #my-work .my-work-container .project-1 .overlay-text, #my-work .my-work-container .project-2 .overlay-text, #my-work .my-work-container .project-3 .overlay-text, #my-work .my-work-container .project-4 .overlay-text, #my-work .my-work-container .project-5 .overlay-text, #my-work .my-work-container .project-6 .overlay-text {
+          visibility: visible;
+          position: absolute;
+          padding: 0;
+          width: 100%; }
+    #my-work .button-container {
+      text-align: center;
+      margin: 4em 0; }
+      #my-work .button-container button {
+        cursor: pointer;
+        width: 214px;
+        background-color: transparent;
+        padding: 13px 15px;
+        font-weight: 700;
+        font-size: 1.2rem; } }
+@media (min-width: 1025px) {
+  #my-work {
+    padding: 7% 0; }
+    #my-work .my-work-title {
+      font-size: 2em;
+      margin: 1em 45% 3em 45%; }
+    #my-work .my-work-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      gap: 35px 35px;
+      align-items: center;
+      margin: 6% 29%; }
+      #my-work .my-work-container .project-1, #my-work .my-work-container .project-2, #my-work .my-work-container .project-3, #my-work .my-work-container .project-4, #my-work .my-work-container .project-5, #my-work .my-work-container .project-6 {
+        padding: 0;
+        margin: 0;
+        position: relative;
+        max-width: 500px; }
+        #my-work .my-work-container .project-1:hover .overlay, #my-work .my-work-container .project-2:hover .overlay, #my-work .my-work-container .project-3:hover .overlay, #my-work .my-work-container .project-4:hover .overlay, #my-work .my-work-container .project-5:hover .overlay, #my-work .my-work-container .project-6:hover .overlay {
+          visibility: visible;
+          background: #fce9d9 radial-gradient(circle, transparent 1%, #fce9d9 1%) center/15000%;
+          transition: all 1s; }
+        #my-work .my-work-container .project-1:hover .overlay-text, #my-work .my-work-container .project-2:hover .overlay-text, #my-work .my-work-container .project-3:hover .overlay-text, #my-work .my-work-container .project-4:hover .overlay-text, #my-work .my-work-container .project-5:hover .overlay-text, #my-work .my-work-container .project-6:hover .overlay-text {
+          visibility: visible; }
+        #my-work .my-work-container .project-1:hover .project-img, #my-work .my-work-container .project-2:hover .project-img, #my-work .my-work-container .project-3:hover .project-img, #my-work .my-work-container .project-4:hover .project-img, #my-work .my-work-container .project-5:hover .project-img, #my-work .my-work-container .project-6:hover .project-img {
+          transform: scale(0.989);
+          filter: blur(3px);
+          -webkit-filter: blur(3px); }
+        #my-work .my-work-container .project-1:active .overlay, #my-work .my-work-container .project-2:active .overlay, #my-work .my-work-container .project-3:active .overlay, #my-work .my-work-container .project-4:active .overlay, #my-work .my-work-container .project-5:active .overlay, #my-work .my-work-container .project-6:active .overlay {
+          background-color: #F2994A;
+          background-size: 100%;
+          transition: background 0s; }
+        #my-work .my-work-container .project-1 .overlay, #my-work .my-work-container .project-2 .overlay, #my-work .my-work-container .project-3 .overlay, #my-work .my-work-container .project-4 .overlay, #my-work .my-work-container .project-5 .overlay, #my-work .my-work-container .project-6 .overlay {
+          visibility: hidden;
+          position: absolute;
+          width: 100%;
+          height: 99%;
+          left: 0;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          margin: 0;
+          padding: 0; }
+        #my-work .my-work-container .project-1 .overlay-text, #my-work .my-work-container .project-2 .overlay-text, #my-work .my-work-container .project-3 .overlay-text, #my-work .my-work-container .project-4 .overlay-text, #my-work .my-work-container .project-5 .overlay-text, #my-work .my-work-container .project-6 .overlay-text {
+          visibility: hidden;
+          position: absolute;
+          padding: 0;
+          width: 100%; }
+          #my-work .my-work-container .project-1 .overlay-text .overlay-text-1, #my-work .my-work-container .project-2 .overlay-text .overlay-text-1, #my-work .my-work-container .project-3 .overlay-text .overlay-text-1, #my-work .my-work-container .project-4 .overlay-text .overlay-text-1, #my-work .my-work-container .project-5 .overlay-text .overlay-text-1, #my-work .my-work-container .project-6 .overlay-text .overlay-text-1 {
+            font-size: 1.3em; }
+          #my-work .my-work-container .project-1 .overlay-text .overlay-text-2, #my-work .my-work-container .project-2 .overlay-text .overlay-text-2, #my-work .my-work-container .project-3 .overlay-text .overlay-text-2, #my-work .my-work-container .project-4 .overlay-text .overlay-text-2, #my-work .my-work-container .project-5 .overlay-text .overlay-text-2, #my-work .my-work-container .project-6 .overlay-text .overlay-text-2 {
+            font-size: 1.2em; }
+    #my-work .button-container {
+      text-align: center;
+      margin: 4em 0; }
+      #my-work .button-container button {
+        cursor: pointer;
+        width: 214px;
+        background-color: transparent;
+        padding: 13px 15px;
+        font-weight: 700;
+        font-size: 1.2rem; } }
+
+/*# sourceMappingURL=work.css.map */

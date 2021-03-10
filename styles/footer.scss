@@ -1,0 +1,29 @@
+@import "variables";
+
+@media (min-width:320px) {
+
+  #footer {
+    background-color: map-get($colors, darkGray2);
+    width: auto;
+
+    .footer-div{
+      padding: 16px 0;
+      text-align: center;
+      color: map-get($colors, lightGray2);
+      font: {
+        size: 0.9em;
+        weight: map-get($fontWeight, medium);
+      }
+
+      .love-icon {
+        width: 23px;
+        vertical-align: middle;
+      }
+
+      .github-icon {
+        width: 23px;
+        vertical-align: middle;
+      }
+    }
+  }
+}

@@ -1,0 +1,299 @@
+* {
+  font-family: 'Montserrat', sans-serif; }
+
+body {
+  margin: 0; }
+
+@media (min-width: 320px) {
+  header {
+    background: black;
+    overflow: hidden;
+    height: 582px; }
+
+  .header .welcome-image {
+    width: 268%;
+    opacity: 0.67;
+    background-color: rgba(31, 30, 30, 0.38);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 100%; }
+  .header .header-content {
+    display: inline-block; }
+    .header .header-content .logo {
+      background-color: transparent;
+      width: 15%;
+      max-width: 68px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 15px; }
+    .header .header-content .burger-button {
+      position: absolute;
+      right: 0;
+      top: 0;
+      background: none;
+      padding: 7px;
+      border-style: none;
+      border-color: transparent; }
+      .header .header-content .burger-button:active :focus {
+        outline: 0;
+        border: none; }
+      .header .header-content .burger-button img {
+        padding: 11px;
+        background-color: transparent;
+        width: 32px; }
+
+  .open {
+    visibility: visible !important;
+    transform: translate(-103%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); }
+
+  .welcome-text {
+    position: absolute;
+    top: 160px;
+    width: 100%; }
+    .welcome-text .hello-text-1 {
+      color: #F2F2F2;
+      text-align: center;
+      margin-bottom: 32px;
+      font-weight: 500; }
+    .welcome-text .hello-text-2 {
+      color: #F2F2F2;
+      text-align: center;
+      font-weight: 700; }
+
+  .web-main-menu {
+    visibility: hidden; }
+
+  .mobile-main-menu {
+    visibility: hidden;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: -75%;
+    padding: 10px;
+    background-color: #F2F2F2;
+    width: 66vw; }
+    .mobile-main-menu .cross-icon {
+      text-align: right;
+      padding: 10px; }
+      .mobile-main-menu .cross-icon img {
+        width: 25px; }
+    .mobile-main-menu ul {
+      list-style: none;
+      padding: 0 34px; }
+      .mobile-main-menu ul li {
+        padding: 0 0 2em 0; }
+        .mobile-main-menu ul li a {
+          display: inline-block;
+          width: 100%;
+          text-decoration: none;
+          font-size: 1em;
+          font-weight: 500;
+          color: black; }
+          .mobile-main-menu ul li a:hover {
+            color: #F2994A;
+            background: #F2F2F2 radial-gradient(circle, transparent 0.1%, #F2F2F2 0.1%) center/100000%;
+            transform: scale(1.1, 1.1);
+            transition: all 1s; }
+          .mobile-main-menu ul li a:active {
+            background-color: #F2994A;
+            background-size: 100%;
+            transition: background 0s; }
+
+  .hire-button {
+    position: absolute;
+    top: 438px;
+    width: 100%;
+    text-align: center; }
+    .hire-button button {
+      color: #F2994A;
+      background-color: transparent;
+      border: 4px solid #F2994A;
+      border-radius: 25px;
+      padding: 17px;
+      width: 36%;
+      max-width: 195px;
+      font-weight: 700;
+      font-size: 1em; }
+      .hire-button button:hover {
+        color: #FFFFFF;
+        background: #F2994A radial-gradient(circle, transparent 0.1%, #F2994A 0.1%) center/100000%;
+        transform: scale(1.1, 1.1);
+        transition: all 1s; }
+      .hire-button button:active {
+        background-color: #fef4ec;
+        background-size: 100%;
+        transition: background 0s; }
+
+  .arrow-icon {
+    visibility: hidden; } }
+@media (min-width: 600px) and (max-width: 800px) {
+  .header .header-content .burger-button {
+    visibility: hidden; }
+  .header .header-content .web-main-menu {
+    visibility: visible;
+    position: absolute;
+    right: 86px;
+    padding: 0;
+    top: 16px;
+    font-size: 0.8em;
+    font-weight: 600; }
+    .header .header-content .web-main-menu .web-nav__items {
+      display: flex;
+      justify-content: center; }
+      .header .header-content .web-main-menu .web-nav__items .web-nav__item {
+        padding: 0 5%;
+        list-style-type: none; }
+        .header .header-content .web-main-menu .web-nav__items .web-nav__item a {
+          text-decoration: none;
+          color: #F2F2F2; }
+      .header .header-content .web-main-menu .web-nav__items .first a {
+        color: #F2994A; }
+
+  .mobile-main-menu {
+    visibility: hidden; }
+
+  .hire-button {
+    top: 44%; }
+    .hire-button button {
+      border-radius: 21px;
+      padding: 15px 12px;
+      width: 18%;
+      font-size: 1rem;
+      background-color: transparent;
+      transition: background 0.8s; }
+
+  .arrow-icon {
+    visibility: visible;
+    position: absolute;
+    top: 52%;
+    left: 47.5%; }
+    .arrow-icon img {
+      background-color: transparent; } }
+@media (min-width: 801px) and (max-width: 1024px) {
+  header {
+    height: 100vh; }
+
+  .header .welcome-image {
+    width: auto;
+    height: 128vh; }
+  .header .header-content .logo {
+    width: 7%; }
+  .header .header-content .burger-button {
+    visibility: hidden; }
+  .header .header-content .web-main-menu {
+    visibility: visible;
+    position: absolute;
+    right: 118px;
+    padding: 0;
+    top: 16px;
+    font-size: 1em;
+    font-weight: 600; }
+    .header .header-content .web-main-menu .web-nav__items {
+      display: flex;
+      justify-content: center; }
+      .header .header-content .web-main-menu .web-nav__items .web-nav__item {
+        padding: 0 5%;
+        list-style-type: none; }
+        .header .header-content .web-main-menu .web-nav__items .web-nav__item:hover {
+          transform: scale(1.1, 1.1);
+          transition: all 1s; }
+          .header .header-content .web-main-menu .web-nav__items .web-nav__item:hover a {
+            color: #fef4ec; }
+        .header .header-content .web-main-menu .web-nav__items .web-nav__item a {
+          text-decoration: none;
+          color: #F2F2F2; }
+      .header .header-content .web-main-menu .web-nav__items .first a {
+        color: #F2994A; }
+
+  .welcome-text {
+    top: 32%; }
+    .welcome-text .hello-text-1 {
+      font-size: 2em;
+      font-weight: 500; }
+    .welcome-text .hello-text-2 {
+      font-size: 3em;
+      font-weight: 700; }
+
+  .hire-button {
+    top: 86%; }
+    .hire-button button {
+      border-radius: 21px;
+      padding: 19px;
+      width: 15%;
+      font-size: 1rem;
+      background-color: transparent;
+      transition: background 0.8s; }
+
+  .arrow-icon {
+    visibility: visible;
+    position: absolute;
+    top: 93%;
+    left: 48%; }
+    .arrow-icon img {
+      background-color: transparent; } }
+@media (min-width: 1025px) {
+  header {
+    height: 100vh; }
+
+  .header .welcome-image {
+    width: auto;
+    height: 128vh; }
+  .header .header-content .logo {
+    width: 7%; }
+  .header .header-content .burger-button {
+    visibility: hidden; }
+  .header .header-content .web-main-menu {
+    visibility: visible;
+    position: absolute;
+    right: 118px;
+    padding: 0;
+    top: 16px;
+    font-size: 1em;
+    font-weight: 600; }
+    .header .header-content .web-main-menu .web-nav__items {
+      display: flex;
+      justify-content: center; }
+      .header .header-content .web-main-menu .web-nav__items .web-nav__item {
+        padding: 0 5%;
+        list-style-type: none; }
+        .header .header-content .web-main-menu .web-nav__items .web-nav__item:hover {
+          transform: scale(1.1, 1.1);
+          transition: all 1s; }
+          .header .header-content .web-main-menu .web-nav__items .web-nav__item:hover a {
+            color: #fef4ec; }
+        .header .header-content .web-main-menu .web-nav__items .web-nav__item a {
+          text-decoration: none;
+          color: #F2F2F2; }
+      .header .header-content .web-main-menu .web-nav__items .first a {
+        color: #F2994A; }
+
+  .welcome-text {
+    top: 32%; }
+    .welcome-text .hello-text-1 {
+      font-size: 2em;
+      font-weight: 500; }
+    .welcome-text .hello-text-2 {
+      font-size: 3em;
+      font-weight: 700; }
+
+  .hire-button {
+    top: 79%; }
+    .hire-button button {
+      border-radius: 21px;
+      padding: 19px;
+      width: 15%;
+      font-size: 1rem;
+      background-color: transparent;
+      transition: background 0.8s; }
+
+  .arrow-icon {
+    visibility: visible;
+    position: absolute;
+    top: 90%;
+    left: 49%; }
+    .arrow-icon img {
+      background-color: transparent; } }
+
+/*# sourceMappingURL=main.css.map */

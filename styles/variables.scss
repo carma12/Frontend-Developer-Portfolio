@@ -1,0 +1,12 @@
+$colors: (main: #F2994A,
+        absolutWhite: #FFFFFF,
+        white: #F2F2F2,
+        lightGray: #BDBDBD,
+        lightGray2: #d9d9d9,
+        mediumGray: #6F6F6F,
+        darkGray: #423e3e,
+        darkGray2: #4F4F4F,
+        lightMain: lighten(#F2994A, 30%),
+        veryLightMain: lighten(#F2994A, 34%),
+        black: #000000);
+$fontWeight: (light: 300, regular: 400, medium: 500, semibold: 600, bold: 700);

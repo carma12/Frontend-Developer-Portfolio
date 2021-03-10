@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <title>Carla Martinez - Frontend Developer</title>
+    <link rel="icon" href="images/icons/Logo2.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/about.css" />
+    <link rel="stylesheet" href="styles/work.css" />
+    <link rel="stylesheet" href="styles/testimonials.css" />
+    <link rel="stylesheet" href="styles/contact.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+</head>
+<body>
+    <header id="home">
+        <div class="header">
+            <img class="welcome-image" src="images/meg-boulden-3ojU4UXDydA-unsplash.jpg" alt="welcome image" />
+            <div class="header-content">
+                <img class="logo" src="images/icons/LogoSaturated.svg" alt="Page logo" />
+                <button class="burger-button">
+                    <img src="images/icons/hamburgerWhite.svg" alt="mobile menu" />
+                </button>
+                <nav class="web-main-menu">
+                    <ul class="web-nav__items">
+                        <li class="web-nav__item first"><a href="#home">Home</a></li>
+                        <li class="web-nav__item"><a href="#about-me">About</a></li>
+                        <li class="web-nav__item"><a href="#my-work">Projects</a></li>
+                        <li class="web-nav__item"><a href="#testimonials">Testimonials</a></li>
+                        <li class="web-nav__item"><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="welcome-text">
+                <h2 class="hello-text-1">Hello</h2>
+                <h1 class="hello-text-2">I'm a Frontend Developer</h1>
+            </div>
+            <div class="hire-button">
+                <button onclick="window.location.href='#contact';">Hire me</button>
+            </div>
+            <div class="arrow-icon">
+                <img src="images/icons/arrow2.svg" alt="arrow icon" />
+            </div>
+        </div>
+    </header>
+    <!-- Hamburger Toggle -->
+    <nav class="mobile-main-menu">
+        <div class="cross-icon">
+            <img src="images/icons/cross.svg" alt="cross icon" />
+        </div>
+        <ul class="mobile-nav__items">
+            <li class="mobile-nav__item"><a href="#home">Home</a></li>
+            <li class="mobile-nav__item"><a href="#about-me">About</a></li>
+            <li class="mobile-nav__item"><a href="#my-work">Projects</a></li>
+            <li class="mobile-nav__item"><a href="#testimonials">Testimonials</a></li>
+            <li class="mobile-nav__item"><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- About me -->
+    <section id="about-me">
+        <div class="about-me-text">
+            <h1 class="about-me__title">About me</h1>
+            <h2 class="about-me__subtitle">I'm <em>Carla Martinez</em> , a Frontend Developer</h2>
+            <p class="about-me__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Curabitur at iaculis nibh. Pellentesque laoreet ante non laoreet euismod. Sed nibh ipsum,
+                vestibulum sit amet tincidunt sit amet, iaculis quis lorem. Integer mollis metus ut ante
+                maximus malesuada. Donec posuere turpis non consectetur luctus. Aliquam accumsan gravida
+                nunc vehicula congue. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed
+                leo sapien, finibus a velit et, rutrum tempor neque.</p>
+        </div>
+        <div class="education-skills-section">
+            <div class="education">
+                <p class="education-title">Education</p>
+                <div class="education-details">
+                    <div class="education-details__container">
+                        <p class="education-details__title">Education 1</p>
+                        <p class="education-details__school">School xyz</p>
+                        <p class="education-details__class">Class: 20XX - 20XX</p>
+                    </div>
+                </div>
+                <div class="education-details-2">
+                    <div class="education-details__container">
+                        <p class="education-details-2__title">Education 2</p>
+                        <p class="education-details-2__school">School xyz</p>
+                        <p class="education-details-2__class">Class: 20XX - 20XX</p>
+                    </div>
+                </div>
+            </div>
+            <div class="skills">
+                <p class="skills-title">Skills</p>
+                <div class="skills-list">
+                    <!-- Dynamically generated HMTL elements (#1) -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="my-work">
+        <h1 class="my-work-title">My work</h1>
+        <div class="my-work-container">
+            <div class="project-1">
+                <a href="#">
+                    <img class="project-img" src="images/hal-gatewood-tZc3vjPCk-Q-unsplash.jpg" alt="project 1 image" />
+                    <div class="overlay"></div>
+                    <div class="overlay-text">
+                        <p class="overlay-text-1">Designio</p>
+                        <p class="overlay-text-2">Design agency</p>
+                    </div>
+                </a>
+            </div>
+            <div class="project-2">
+                <a href="#">
+                    <img class="project-img" src="images/henar-langa-xFtkrgtJaXI-unsplash_cropped.jpg" alt="project 2 image" />
+                    <div class="overlay"></div>
+                    <div class="overlay-text">
+                        <p class="overlay-text-1">Nordic Experience</p>
+                        <p class="overlay-text-2">Minimalist furniture</p>
+                    </div>
+                </a>
+            </div>
+            <div class="project-3">
+                <a href="#">
+                    <img class="project-img" src="images/kevin-bhagat-zNRITe8NPqY-unsplash.jpg" alt="project 3 image" />
+                    <div class="overlay"></div>
+                    <div class="overlay-text">
+                        <p class="overlay-text-1">Work anywhere</p>
+                        <p class="overlay-text-2">Productivity web</p>
+                    </div>
+                </a>
+            </div>
+            <div class="project-4">
+                <a href="#">
+                    <img class="project-img" src="images/luke-chesser-JKUTrJ4vK00-unsplash.jpg" alt="project 4 image" />
+                    <div class="overlay"></div>
+                    <div class="overlay-text">
+                        <p class="overlay-text-1">MoneyBy</p>
+                        <p class="overlay-text-2">Dashboard design</p>
+                    </div>
+                </a>
+            </div>
+            <div class="project-5">
+                <a href="#">
+                    <img class="project-img" src="images/balazs-ketyi-6ba_vdgx_go-unsplash_cropped.jpg" alt="project 5 image" />
+                    <div class="overlay"></div>
+                    <div class="overlay-text">
+                        <p class="overlay-text-1">Earthquake</p>
+                        <p class="overlay-text-2">App design</p>
+                    </div>
+                </a>
+            </div>
+            <div class="project-6">
+                <a href="#">
+                    <img class="project-img" src="images/sincerely-media-qeDcKFADdp8-unsplash.jpg" alt="project 6 image" />
+                    <div class="overlay"></div>
+                    <div class="overlay-text">
+                        <p class="overlay-text-1">T-Shirt Me</p>
+                        <p class="overlay-text-2">Brand design</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="button-container">
+            <button>
+                <a href="">
+                    <div class="button-github">
+                        <img src="images/icons/github.svg" alt="github icon"/>
+                        <p>More on Github</p>
+                    </div>
+                </a>
+            </button>
+        </div>
+    </section>
+    <section id="testimonials">
+        <h1 class="testimonials-title">Testimonials</h1>
+        <p class="testimonials-subtitle">What people say about me</p>
+        <!-- Next / previous buttons -->
+        <div class="testimonials-next-prev-buttons">
+            <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
+            <div class="testimonials-slide">
+                <!-- dynamically parsed JS code here (#2) -->
+            </div>
+            <a class="next" onclick="moveSlide(1)">&#10095;</a>
+        </div>
+        <!-- Dots / circles -->
+        <div class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+    <section id="contact">
+        <h1 class="contact-title">Contact</h1>
+        <div class="contact-sections">
+            <div class="contact-cta-form">
+                <p class="cta-form-header">Let's hear about your project</p>
+                <form id="your-project-form">
+                    <label for="your-email" class="your-email-label">
+                        <input type="text" id="your-email" name="Your Email" placeholder="yourEmail@gmail.com">
+                    </label>
+                    <br />
+                    <label for="your-name">
+                        <input type="text" id="your-name" name="Your Name" placeholder="Your name">
+                    </label>
+                    <br />
+                    <label for="your-message">
+                    <textarea id="your-message" name="Message" cols="10" rows="7"
+                              placeholder="Tell me what do you need..." form="your-project-form"></textarea>
+                    </label>
+                    <button class="your-project-button-send" name="Button send">Send</button>
+                </form>
+            </div>
+            <div class="contact-me-info">
+                <p class="contact-me-text">Looking for hearing from you!</p>
+                <div class="info__dev-card">
+                    <p>Carla Martinez</p>
+                    <img class="contact-me__logo" alt="Page logo" src="images/icons/LogoSaturated.svg" />
+                    <p>Frontend Developer</p>
+                </div>
+                <div class="info__specific">
+                    <div class="contact-email">
+                        <img src="images/icons/email.svg" alt="contact email" />
+                        <div class="vertical"></div>
+                        <p class="contact-data">myEmail@gmail.com</p>
+                    </div>
+                    <div class="contact-location">
+                        <img src="images/icons/location.svg" alt="contact location" />
+                        <div class="vertical"></div>
+                        <p class="contact-data">Munich, Germany</p>
+                    </div>
+                    <div class="contact-telephone">
+                        <img src="images/icons/phone.svg" alt="contact phone" />
+                        <div class="vertical"></div>
+                        <p class="contact-data">+49 17655000000</p>
+                    </div>
+                </div>
+                <div class="info__social-networks">
+                    <p class="follow-me">Follow me</p>
+                    <div class="social-networks">
+                        <a href="#" target="_blank">
+                            <img src="images/icons/github.svg" alt="github icon" />
+                        </a>
+                        <a href="#" target="_blank">
+                            <img src="images/icons/linkedin.svg" alt="linkedin icon" />
+                        </a>
+                        <a href="#" target="_blank">
+                            <img src="images/icons/behance.svg" alt="behance icon" />
+                        </a>
+                        <a href="#" target="_blank">
+                            <img src="images/icons/twitter.svg" alt="twitter icon" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer" class="page-footer">
+        <div class="footer-div">
+            Made with <img src="images/icons/love.svg" class="love-icon" alt="love icon"/> - Carla Martínez Poveda
+            <a href="https://github.com/carma12" target="_blank" title="github">
+                <img src="images/icons/github.svg" class="github-icon" alt="github icon"/>
+            </a>
+        </div>
+    </footer>
+
+    <!-- scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>

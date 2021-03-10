@@ -1,0 +1,410 @@
+@import "variables";
+
+@media (min-width:320px) {
+
+  #about-me {
+    background-color: map-get($colors, lightMain);
+    padding: 7% 0 8% 0;
+
+    .about-me-text {
+      padding: 20px;
+      text-align: center;
+
+      h1 {
+        font: {
+          size: 1.5em;
+          weight: map-get($fontWeight, bold);
+        }
+        border-bottom: 3px solid map-get($colors, main);
+        padding-bottom: 5px;
+        margin: 1.5em 26%;
+        text-transform: uppercase;
+      }
+
+      h2 {
+        padding: 1em 0;
+        font: {
+          size: 1.3em;
+          weight: map-get($fontWeight, semibold);
+        }
+
+      }
+
+      em {
+        color: map-get($colors, main);
+        font: {
+          weight: map-get($fontWeight, semibold);
+          style: normal;
+        }
+      }
+
+      p {
+        padding: 28px 6px;
+        margin-bottom: 9%;
+        font-size: 1em;
+        text-align: justify;
+      }
+    }
+
+    .education, .skills {
+      display: block;
+      background-color: white;
+      width: auto;
+      padding: 8px;
+      margin: 50px 7%;
+      text-align: center;
+      text-transform: uppercase;
+      font: {
+        size: 1.6em;
+        weight: map-get($fontWeight, bold);
+      }
+    }
+
+    .education {
+      margin-bottom: 8%;
+
+      .education-title {
+        font-size: 1em;
+      }
+
+      .education-details, .education-details-2 {
+        border: 2px solid map-get($colors, lightGray);
+        margin: 8% 7%;
+
+        .education-details__container {
+          padding: 30px;
+
+          .education-details__title, .education-details-2__title {
+            padding-bottom: 16px;
+            font: {
+              weight: map-get($fontWeight, semibold);
+              size: 0.7em;
+            }
+          }
+
+          .education-details__school, .education-details__class, .education-details-2__school, .education-details-2__class {
+            padding: 14px;
+            font: {
+              weight: map-get($fontWeight, regular);
+              size: 0.5em;
+            }
+            color: map-get($colors, mediumGray);
+          }
+        }
+      }
+    }
+
+    .skills {
+      .skills-title {
+        font-size: 1em;
+      }
+
+      .skills-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 23px 0;
+        padding: 25px 0;
+        align-items: center;
+
+        .html-skill, .css-skill, .bootstrap-skill, .sass-skill, .javascript-skill, .react-skill, .figma-skill {
+          img {
+            width: 24px;
+          }
+
+          p {
+            font: {
+              size: 0.5em;
+              weight: map-get($fontWeight, medium);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// -------- PORTRAIT TABLETS -----------
+@media (min-width: 600px) and (max-width: 800px) {
+
+  #about-me {
+    padding: 9% 9% 8% 9%;
+
+    .about-me-text {
+      padding: 0;
+
+      h1 {
+        font: {
+          size: 1.5em;
+        }
+        margin: 1em 36%;
+      }
+
+      h2 {
+        padding: 1.2em 0;
+      }
+
+      p {
+        padding: 28px 15%;
+      }
+    }
+
+    .education-skills-section {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 4em;
+    }
+
+    .education, .skills {
+      box-sizing: border-box;
+      margin: 0 7%;
+      width: 100%;
+      max-width: 389px;
+      font: {
+        size: 1.5em;
+      }
+    }
+
+    .education {
+      margin: 0;
+
+      .education-title {
+        padding: 2% 0 14% 0;
+      }
+
+      .education-details, .education-details-2 {
+        border: 2px solid map-get($colors, lightGray);
+        margin: 6% 6%;
+
+        .education-details__container {
+          padding: 13px;
+
+          .education-details__title, .education-details-2__title {
+            font: {
+              size: 0.7em;
+            }
+          }
+
+          .education-details__school, .education-details__class, .education-details-2__school, .education-details-2__class {
+            padding: 8px;
+            font: {
+              size: 0.6em;
+            }
+          }
+        }
+      }
+    }
+
+    .skills {
+      margin: 0 0 0 22px;
+
+      .skills-title {
+        padding: 2% 0;
+      }
+
+      .skills-list {
+        padding: 50px 25px;
+
+        .html-skill, .css-skill, .bootstrap-skill, .sass-skill, .javascript-skill, .react-skill, .figma-skill {
+          img {
+            width: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// --------- TABLETS, LO-RES LAPTOPS/IPAD -----------
+@media (min-width: 801px) and (max-width: 1024px) {
+
+  #about-me {
+    padding: 5% 9% 8% 9%;
+
+    .about-me-text {
+      padding: 0;
+      h1 {
+        font: {
+          size: 2em;
+        }
+        margin: 1em 39% 2em 39%;
+        text-transform: uppercase;
+      }
+
+      h2 {
+        margin-top: 3em;
+        font: {
+          size: 1.2em;
+          weight: map-get($fontWeight, semibold);
+        }
+      }
+
+      p {
+        margin-bottom: 7%;
+        padding: 28px 20%;
+        font: {
+          size: 0.8em;
+        }
+      }
+    }
+
+    .education-skills-section {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 4em;
+    }
+
+    .education, .skills {
+      box-sizing: border-box;
+      margin: 0 7%;
+      width: 100%;
+      max-width: 389px;
+      font: {
+        size: 1.5em;
+      }
+    }
+
+    .education {
+      margin-right: 0;
+
+      .education-title {
+        padding: 2% 0 14% 0;
+      }
+
+      .education-details, .education-details-2 {
+        border: 2px solid map-get($colors, lightGray);
+        margin: 6% 6%;
+
+        .education-details__container {
+          padding: 13px;
+
+          .education-details__title, .education-details-2__title {
+            font: {
+              size: 0.7em;
+            }
+          }
+
+          .education-details__school, .education-details__class, .education-details-2__school, .education-details-2__class {
+            padding: 8px;
+            font: {
+              size: 0.6em;
+            }
+          }
+        }
+      }
+    }
+
+    .skills {
+      .skills-title {
+        padding: 2% 0;
+      }
+
+      .skills-list {
+        padding: 50px 25px;
+
+        .html-skill, .css-skill, .bootstrap-skill, .sass-skill, .javascript-skill, .react-skill, .figma-skill {
+          img {
+            width: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// ---- LAPTOPS / DESKTOPS ---
+@media (min-width: 1025px) {
+
+  #about-me {
+    padding: 5% 9% 8% 9%;
+
+    .about-me-text {
+      padding: 0;
+      h1 {
+        font: {
+          size: 2em;
+        }
+        margin: 1em 44% 2em 44%; //
+        text-transform: uppercase;
+      }
+
+      h2 {
+        margin-top: 3em;
+        font: {
+          size: 1.8em;
+          weight: map-get($fontWeight, semibold);
+        }
+      }
+
+      p {
+        margin-bottom: 7%;
+        padding: 28px 20%;
+        font: {
+          size: 1em;
+        }
+      }
+    }
+
+    .education-skills-section {
+      display: flex;
+      justify-content: center;
+      //padding-bottom: 4em;
+    }
+
+    .education, .skills {
+      box-sizing: border-box;
+      margin: 0 7%;
+      width: 100%;
+      max-width: 389px;
+      font: {
+        size: 1.5em;
+      }
+    }
+
+    .education {
+      margin-right: 0;
+
+      .education-title {
+        padding: 2% 0 14% 0;
+      }
+
+      .education-details, .education-details-2 {
+        border: 2px solid map-get($colors, lightGray);
+        margin: 6% 6%;
+
+        .education-details__container {
+          padding: 13px;
+
+          .education-details__title, .education-details-2__title {
+            font: {
+              size: 0.7em;
+            }
+          }
+
+          .education-details__school, .education-details__class, .education-details-2__school, .education-details-2__class {
+            padding: 8px;
+            font: {
+              size: 0.6em;
+            }
+          }
+        }
+      }
+    }
+
+    .skills {
+      .skills-title {
+        padding: 2% 0;
+      }
+
+      .skills-list {
+        padding: 50px 25px;
+
+        .html-skill, .css-skill, .bootstrap-skill, .sass-skill, .javascript-skill, .react-skill, .figma-skill {
+          img {
+            width: 30px;
+          }
+        }
+      }
+    }
+  }
+}

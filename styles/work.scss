@@ -1,0 +1,450 @@
+@import "variables";
+
+@media (min-width:320px) {
+
+  #my-work {
+    padding: 14% 0 17% 0;
+
+    .my-work-title {
+      font: {
+        size: 1.5em;
+        weight: map-get($fontWeight, bold);
+      }
+      text-align: center;
+      border-bottom: 3px solid map-get($colors, main);
+      padding-bottom: 5px;
+      margin: 1.5em 30% 2.7em 30%;
+      text-transform: uppercase;
+    }
+
+    .my-work-container {
+      margin: 15%;
+
+      .project-1, .project-2, .project-3, .project-4, .project-5, .project-6 {
+        position: relative;
+        margin-bottom: 40px;
+
+        &:hover {
+          .overlay {
+            background: map-get($colors, lightMain) radial-gradient(circle, transparent 1%, map-get($colors, lightMain) 1%) center/15000%;
+            transition: all 1s;
+          }
+        }
+
+        &:active {
+          .overlay {
+            background-color: map-get($colors, main);
+            background-size: 100%;
+            transition: background 0s;
+          }
+        }
+
+        .overlay {
+          visibility: visible;
+          position: absolute;
+          left: 0;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          margin:0;
+          padding:0;
+          width: 100%;
+          height: 98.6%;
+          opacity: 0.7;
+          border-radius: 55px;
+          background-color: map-get($colors, lightMain);
+        }
+
+        .overlay-text {
+          visibility: visible;
+          position: absolute;
+          text-align: center;
+          top: 38%;
+          left: 0;
+          padding: 0;
+          margin: 0;
+          width: 100%;
+          height: 100%;
+          opacity: 1;
+
+          .overlay-text-1 {
+            margin: 0 0 1em 0;
+            font: {
+              weight: map-get($fontWeight, semibold);
+              size: 1.3em;
+            }
+            color: map-get($colors, darkGray);
+          }
+
+          .overlay-text-2 {
+            margin: 0;
+            font: {
+              weight: map-get($fontWeight, medium);
+              size: 1em;
+            }
+            color: map-get($colors, darkGray);
+          }
+        }
+
+        .project-img {
+          width: 100%;
+          border-radius: 55px;
+          opacity: 1;
+
+        }
+      }
+    }
+
+    .button-container {
+      text-align: center;
+
+      button {
+        width: 50%;
+        color: map-get($colors, main);
+        background-color: transparent;
+        border: 4px solid map-get($colors, main);
+        border-radius: 69px;
+        padding: 8px 3px;
+        font: {
+          weight: map-get($fontWeight, bold);
+          size: 1em;
+        }
+        transition: background 0.8s;
+
+        &:hover {
+          background: map-get($colors, main) radial-gradient(circle, transparent 0.1%, map-get($colors, main) 0.1%) center/100000%;
+
+          .button-github {
+            img {
+              filter: invert(100%) sepia(1%) saturate(7500%) hue-rotate(76deg) brightness(142%) contrast(96%);
+              -webkit-filter: invert(100%) sepia(1%) saturate(7500%) hue-rotate(76deg) brightness(142%) contrast(96%);
+            }
+
+            p {
+              color: map-get($colors, absolutWhite);
+            }
+          }
+        }
+
+        &:active {
+          background-color: map-get($colors, veryLightMain);
+          background-size: 100%;
+          transition: background 0s;
+        }
+
+        a {
+          text-decoration: none;
+
+          .button-github {
+            display: flex;
+
+            img {
+              width: 16%;
+              padding: 0 6px;
+            }
+
+            p {
+              margin: 8px 0;
+              color: map-get($colors, main);
+              font-size: 0.8em;
+              justify-content: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// -------- PORTRAIT TABLETS -----------
+@media (min-width: 600px) and (max-width: 800px) {
+
+  #my-work {
+    padding: 9% 6%;
+
+    .my-work-title {
+      font: {
+        size: 1.5em;
+      }
+      margin: 1em 37% 2.5em 37%;
+    }
+
+    .my-work-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      gap: 35px 35px;
+      align-items: center;
+      margin: 4%;
+
+      .project-1, .project-2, .project-3, .project-4, .project-5, .project-6 {
+        padding: 0;
+        margin: 0;
+        position: relative;
+
+        &:hover {
+          .project-img {
+            filter: none;
+            -webkit-filter: none;
+          }
+
+          .overlay {
+
+            background: map-get($colors, lightMain) radial-gradient(circle, transparent 1%, map-get($colors, lightMain) 1%) center/15000%;
+            transition: all 1s;
+          }
+        }
+
+        &:active {
+          .overlay {
+            background-color: map-get($colors, main);
+            background-size: 100%;
+            transition: background 0s;
+          }
+        }
+
+        .overlay {
+          visibility: visible;
+          position: absolute;
+          width: 100%;
+          height: 99%;
+          left: 0;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          margin:0;
+          padding:0;
+        }
+
+        .overlay-text {
+          visibility: visible;
+          position: absolute;
+          padding: 0;
+          width: 100%;
+          top: 29%;
+
+          .overlay-text-1 {
+            font: {
+              size: 1.3em;
+            }
+          }
+
+          .overlay-text-2 {
+            font: {
+              size: 1.2em;
+            }
+          }
+        }
+
+        .project-img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+    .button-container {
+      text-align: center;
+      margin: 13% 0 6% 0;
+
+      button {
+        width: 214px;
+        color: map-get($colors, main);
+        background-color: transparent;
+        border: 4px solid map-get($colors, main);
+        border-radius: 29px;
+        padding: 13px 15px;
+        font: {
+          weight: map-get($fontWeight, bold);
+          size: 1.2rem;
+        }
+
+        a {
+          .button-github {
+            img {
+              width: 17%;
+              padding: 0 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// ---- TABLETS, LO-RES LAPTOPS/IPAD ----
+@media (min-width: 801px) and (max-width: 1024px) {
+
+  #my-work {
+    padding: 7% 0;
+
+    .my-work-title {
+      font: {
+        size: 2em;
+      }
+      margin: 1em 41% 3em 41%;
+    }
+
+    .my-work-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      gap: 35px 35px;
+      align-items: center;
+      margin: 10%;
+
+      .project-1, .project-2, .project-3, .project-4, .project-5, .project-6 {
+        padding: 0;
+        margin: 0;
+        position: relative;
+        max-width: 500px;
+
+        &:hover {
+          .overlay {
+            background: map-get($colors, lightMain) radial-gradient(circle, transparent 1%, map-get($colors, lightMain) 1%) center/15000%;
+            transition: all 1s;
+          }
+        }
+
+        &:active {
+          .overlay {
+            background-color: map-get($colors, main);
+            background-size: 100%;
+            transition: background 0s;
+          }
+        }
+
+        .overlay {
+          visibility: visible;
+        }
+
+        .overlay-text {
+          visibility: visible;
+          position: absolute;
+          padding: 0;
+          width: 100%;
+        }
+      }
+    }
+
+    .button-container {
+      text-align: center;
+      margin: 4em 0;
+
+      button {
+        cursor: pointer;
+        width: 214px;
+        background-color: transparent;
+        padding: 13px 15px;
+        font: {
+          weight: map-get($fontWeight, bold);
+          size: 1.2rem;
+        }
+      }
+    }
+  }
+}
+
+// ---- LAPTOPS / DESKTOPS ---
+@media (min-width: 1025px) {
+
+  #my-work {
+    padding: 7% 0;
+
+    .my-work-title {
+      font: {
+        size: 2em;
+      }
+      margin: 1em 45% 3em 45%;
+    }
+
+    .my-work-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      gap: 35px 35px;
+      align-items: center;
+      margin: 6% 29%;
+
+      .project-1, .project-2, .project-3, .project-4, .project-5, .project-6 {
+        padding: 0;
+        margin: 0;
+        position: relative;
+        max-width: 500px;
+
+        &:hover {
+          .overlay {
+            visibility: visible;
+            background: map-get($colors, lightMain) radial-gradient(circle, transparent 1%, map-get($colors, lightMain) 1%) center/15000%;
+            transition: all 1s;
+          }
+          .overlay-text {
+            visibility: visible;
+          }
+
+          .project-img {
+            transform: scale(0.989); // resize to prevent borders when blur
+            filter: blur(3px);
+            -webkit-filter: blur(3px);
+          }
+        }
+
+        &:active {
+          .overlay {
+            background-color: map-get($colors, main);
+            background-size: 100%;
+            transition: background 0s;
+          }
+        }
+
+        .overlay {
+          visibility: hidden;
+          position: absolute;
+          width: 100%;
+          height: 99%;
+          left: 0;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          margin:0;
+          padding:0;
+        }
+
+        .overlay-text {
+          visibility: hidden;
+          position: absolute;
+          padding: 0;
+          width: 100%;
+
+          .overlay-text-1 {
+            font: {
+              size: 1.3em;
+            }
+          }
+
+          .overlay-text-2 {
+            font: {
+              size: 1.2em;
+            }
+          }
+        }
+      }
+    }
+
+    .button-container {
+      text-align: center;
+      margin: 4em 0;
+
+      button {
+        cursor: pointer;
+        width: 214px;
+        background-color: transparent;
+        padding: 13px 15px;
+        font: {
+          weight: map-get($fontWeight, bold);
+          size: 1.2rem;
+        }
+      }
+    }
+  }
+}

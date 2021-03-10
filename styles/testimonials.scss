@@ -1,0 +1,318 @@
+@import "variables";
+
+@media (min-width:320px) {
+
+  #testimonials {
+    background-color: map-get($colors, lightMain);
+    padding: 12% 20px 17% 20px;
+
+    .testimonials-title {
+      font: {
+        size: 1.5em;
+        weight: map-get($fontWeight, bold);
+      }
+      text-align: center;
+      border-bottom: 3px solid map-get($colors, main);
+      padding-bottom: 5px;
+      margin: 1.5em 12% 2em 12%;
+      text-transform: uppercase;
+    }
+
+    .testimonials-subtitle {
+      text-align: center;
+      margin-bottom: 14%;
+    }
+
+    .testimonials-next-prev-buttons {
+      width: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      //
+      height: 500px;
+
+      .testimonials-slide {
+        text-align: center;
+
+        .slide {
+          display: none; // hidden by default
+
+          .testimonial-1, .testimonial-2, .testimonial-3 {
+            img {
+              vertical-align: middle;
+              width: 48%;
+            }
+
+            p {
+              padding: 28px 4%;
+              font: {
+                size: 1em;
+                weight: map-get($fontWeight, regular);
+              }
+            }
+
+            .testimonial-1-text, .testimonial-2-text, .testimonial-3-text {
+              text-align: justify;
+              margin: 0;
+            }
+          ;
+
+            .testimonial-1-name, .testimonial-2-name, .testimonial-3-name {
+              padding: 10px 0;
+              margin: 0;
+              font: {
+                size: 0.9em;
+                weight: map-get($fontWeight, medium);
+              }
+            }
+
+            .testimonial-1-position, .testimonial-2-position, .testimonial-3-position {
+              margin: 0;
+              padding: 10px 0;
+              font: {
+                size: 0.9em;
+                weight: map-get($fontWeight, light);
+              }
+            }
+          }
+        }
+      }
+
+      .prev, .next {
+        cursor: pointer;
+        color: map-get($colors, main);
+        font: {
+          weight: map-get($fontWeight, bold);
+          size: 39px;
+        }
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none; // prevents from highlighting when clicked
+      }
+
+      .prev {
+        padding-right: 17px;
+
+        &:hover {
+          transform: scale(1.15, 1.15);
+        }
+
+        &:active {
+          transform: scale(1, 1);
+        }
+      }
+
+      .next {
+        padding-left: 17px;
+
+        &:hover {
+          transform: scale(1.15, 1.15);
+        }
+
+        &:active {
+          transform: scale(1, 1);
+        }
+      }
+    }
+
+    .dots {
+      text-align: center;
+      padding: 12px 0;
+
+      .dot {
+        cursor: pointer;
+        height: 10px;
+        width: 10px;
+        margin: 0 7px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+
+      .active {
+        background-color: map-get($colors, main);
+      }
+    }
+  }
+}
+
+// -------- PORTRAIT TABLETS -----------
+@media (min-width: 600px) and (max-width: 800px) {
+
+  #testimonials {
+    padding: 9% 32px;
+
+    .testimonials-title {
+      font: {
+        size: 1.5em;
+      }
+      margin: 1.5em 33% 2em 33%;
+    }
+
+    .testimonials-subtitle {
+      margin: 2em 0 0.5em 0;
+    }
+
+    .testimonials-next-prev-buttons {
+      .testimonials-slide {
+        .slide {
+          .testimonial-1, .testimonial-2, .testimonial-3 {
+            width: 380px;
+
+            img {
+              width: 111px;
+            }
+
+            p {
+              padding: 28px 10%;
+            }
+          }
+        }
+      }
+
+      .prev {
+        margin-left: 30%;
+
+        &:hover {
+          transform: scale(1.15, 1.15);
+        }
+
+        &:active {
+          transform: scale(1, 1);
+        }
+      }
+      .next {
+        margin-right: 30%;
+
+        &:hover {
+          transform: scale(1.15, 1.15);
+        }
+
+        &:active {
+          transform: scale(1, 1);
+        }
+      }
+    }
+  }
+}
+
+// --------- TABLETS, LO-RES LAPTOPS/IPAD -----------
+@media (min-width: 801px) and (max-width: 1024px) {
+
+  #testimonials {
+    padding: 5% 40px 10% 40px;
+
+    .testimonials-title {
+      font: {
+        size: 2em;
+      }
+      margin: 1.5em 36.5% 3em 36.5%;
+    }
+
+    .testimonials-subtitle {
+      margin-bottom: 3%;
+    }
+
+    .testimonials-next-prev-buttons {
+      .testimonials-slide {
+        .slide {
+          .testimonial-1, .testimonial-2, .testimonial-3 {
+            width: 380px;
+
+            img {
+              width: 111px;
+            }
+
+            p {
+              padding: 28px 10%;
+            }
+          }
+        }
+      }
+
+      .prev {
+        margin-left: 30%;
+
+        &:hover {
+          transform: scale(1.15, 1.15);
+        }
+
+        &:active {
+          transform: scale(1, 1);
+        }
+      }
+      .next {
+        margin-right: 30%;
+
+        &:hover {
+          transform: scale(1.15, 1.15);
+        }
+
+        &:active {
+          transform: scale(1, 1);
+        }
+      }
+    }
+  }
+}
+
+// ---- LAPTOPS / DESKTOPS ---
+@media (min-width: 1025px) {
+
+  #testimonials {
+    padding: 5% 40px 10% 40px;
+
+    .testimonials-title {
+      font: {
+        size: 2em;
+      }
+      margin: 1.5em 43% 3em 43%;
+    }
+
+    .testimonials-subtitle {
+      margin-bottom: 3%;
+    }
+
+    .testimonials-next-prev-buttons {
+      .testimonials-slide {
+        .slide {
+          .testimonial-1, .testimonial-2, .testimonial-3 {
+            width: 380px;
+
+            img {
+              width: 121px;
+            }
+
+            p {
+              padding: 28px 10%;
+            }
+          }
+        }
+      }
+
+      .prev {
+        margin-left: 30%;
+
+        &:hover {
+          transform: scale(1.15, 1.15);
+        }
+
+        &:active {
+          transform: scale(1, 1);
+        }
+      }
+      .next {
+        margin-right: 30%;
+
+        &:hover {
+          transform: scale(1.15, 1.15);
+        }
+
+        &:active {
+          transform: scale(1, 1);
+        }
+      }
+    }
+  }
+}
